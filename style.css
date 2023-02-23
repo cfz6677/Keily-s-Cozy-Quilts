@@ -87,9 +87,10 @@ header {
   .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 960px; /* set the maximum width of the photo gallery */
     margin: 0 auto; /* center the photo gallery horizontally */
+    text-align: center;
   }
   
   .square {
