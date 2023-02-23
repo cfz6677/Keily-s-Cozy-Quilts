@@ -90,17 +90,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: -10px; /* add negative margin to the container */
+    margin: -10px;
     padding: 0;
   }
   
   .photo-gallery img {
-    width: 100%; /* use full width for all screen sizes */
-    max-width: 400px; /* limit maximum width for large screens */
-    height: auto; /* maintain aspect ratio */
-    margin: 10px 10px 10px 10px;
-    box-sizing: border-box; /* include margin in total width */
-    }
+    width: 100%;
+    height: auto;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
 
     .square {
         width: 33.33%;
