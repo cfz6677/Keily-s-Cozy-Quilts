@@ -79,6 +79,7 @@ header {
     font-size: 16px;
     padding-top: 100px;
   }
+  
   .photo-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +88,6 @@ header {
     padding: 0;
   }
   
-  
   .photo-gallery img {
     width: 100%; /* use full width for all screen sizes */
     max-width: 400px; /* limit maximum width for large screens */
@@ -95,14 +95,16 @@ header {
     margin: 10px 10px 10px 10px;
     box-sizing: border-box; /* include margin in total width */
 }
+
 .square {
     width: 33.33%;
     padding-bottom: 33.33%;
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 0; /* remove margin from the images */
+    margin: -10px 10px; /* remove margin from the images and add negative margin to the container */
   }
+  
   
   .photo-gallery .square img {
     position: absolute;
