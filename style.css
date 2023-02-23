@@ -93,8 +93,8 @@ header {
     height: auto; /* maintain aspect ratio */
     margin: 10px;
     box-sizing: border-box; /* include margin in total width */
-    margin-bottom: -250px;
-  }
+    margin-bottom: -300px;
+}
   
   .photo-gallery .square {
     width: 33.33%; /* use 1/3 width for large screens */
