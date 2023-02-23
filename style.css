@@ -79,28 +79,29 @@ header {
     font-size: 16px;
     padding-top: 100px;
   }
-  
   .photo-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -5px; /* add negative margin to compensate for padding */
+    margin: -10px; /* add negative margin to the container */
+    padding: 0;
   }
+  
   
   .photo-gallery img {
     width: 100%; /* use full width for all screen sizes */
     max-width: 400px; /* limit maximum width for large screens */
     height: auto; /* maintain aspect ratio */
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
     box-sizing: border-box; /* include margin in total width */
-    margin-bottom: -300px;
 }
-  
-  .photo-gallery .square {
-    width: 33.33%; /* use 1/3 width for large screens */
-    padding-bottom: 33.33%; /* create 1:1 aspect ratio */
+.square {
+    width: 33.33%;
+    padding-bottom: 33.33%;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
+    margin: 0; /* remove margin from the images */
   }
   
   .photo-gallery .square img {
