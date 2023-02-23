@@ -68,7 +68,6 @@ header {
     margin-left: 200px; /* adjust the margin to fit your image size */
   }
   
-  
   footer {
     background-color: #f2f2f2;
     padding: 20px;
@@ -79,40 +78,29 @@ header {
     font-size: 16px;
     padding-top: 100px;
   }
-
-  #pricing iframe {
-    display: block;
-    margin: 0 auto;
+  
+  #iframe-container {
+    display: flex;
+    justify-content: center;
   }
- 
   
   .photo-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: -10px;
-    padding: 0;
+    justify-content: space-between;
+    max-width: 960px; /* set the maximum width of the photo gallery */
+    margin: 0 auto; /* center the photo gallery horizontally */
   }
   
-  .photo-gallery img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-
   .square {
-    width: 33.33%;
-    padding-bottom: 33.33%;
+    width: calc((100% / 3) - 20px); /* use calc() to dynamically set the width of each square */
+    padding-bottom: calc((100% / 6) - 20px); /* use calc() to dynamically set the padding-bottom of each square */
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    margin: -100px; /*remove margin from the images*/
-    border: 1rem 1rem 1rem 1rem solid white; /*add a white border*/
-    }
-  
-      
+    margin: 10px 0; /* add margin to the top and bottom of each row */
+    border: 1rem solid white; /* add a white border */
+  }
   
   
   .photo-gallery .square img {
@@ -128,54 +116,29 @@ header {
     margin: auto;
   }
   
-  /*Adjust the size of the photo gallery images for larger screens*/
-  @media only screen and (min-width: 768px) {
-    .photo-gallery img {
-      max-width: calc(33.33% - 20px);
-    }
-}
-    
-  
-  /* Adjust the size of the photo gallery images for larger screens */
-  @media only screen and (min-width: 768px) {
-    .photo-gallery img {
-      max-width: calc(100% / 3 - 20px); /* use calc() to dynamically set max-width based on the number of images per row */
+/*Adjust the size of the photo gallery images for larger screens*/
+@media only screen and (min-width: 768px) {
+    .photo-gallery .square {
+      width: calc((100% / 6) - 20px); /* use calc() to dynamically set the width of each square */
+      padding-bottom: calc((100% / 6) - 20px); /* use calc() to dynamically set the padding-bottom of each square */
+      margin: 10px; /* add margin to the top, bottom, left, and right of each square */
     }
   }
   
-  /* Adjust the size of the photo gallery images for smaller screens */
-  @media only screen and (max-width: 767px) {
-    .photo-gallery img {
-      max-width: calc(50% - 20px); /* use calc() to dynamically set max-width based on the number of images per row */
+  /* Define the styles for tablet-sized screens */
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .photo-gallery .square {
+      width: calc((100% / 3) - 20px);
+      padding-bottom: calc((100% / 3) - 20px);
+      margin: 10px;
     }
   }
   
-  /* Define the styles for larger screens */
-  @media only screen and (min-width: 768px) {
-    body {
-      font-size: 20px;
-    }
-  
-    /* Adjust the size of the main content sections */
-    main {
-      max-width: 1000px;
-      padding: 0; /* remove left and right padding */
-    }
-  
-    /* Adjust the size of the photo gallery images */
-    .photo-gallery img {
-      max-width: 300px;
+  /* Define the styles for smaller phone screens */
+  @media only screen and (max-width: 480px) {
+    .photo-gallery .square {
+      width: calc((100% / 2) - 20px);
+      padding-bottom: calc((100% / 2) - 20px);
+      margin: 10px;
     }
   }
-  
-  /* Define the styles for smaller screens */
-  @media only screen and (max-width: 767px) {
-    body {
-      font-size: 14px;
-    }
-  
-    /* Adjust the size of the main content sections */
-    main {
-      max-width: 90%;
-    }
-}
