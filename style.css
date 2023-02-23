@@ -100,9 +100,9 @@ header {
     height: auto; /* maintain aspect ratio */
     margin: 10px 10px 10px 10px;
     box-sizing: border-box; /* include margin in total width */
-}
+    }
 
-.square {
+    .square {
     width: 33.33%;
     padding-bottom: 33.33%;
     position: relative;
