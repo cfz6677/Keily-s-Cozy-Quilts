@@ -108,8 +108,8 @@ header {
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    margin: -1000px; /*remove margin from the images*/
-    border: 4px solid white; /*add a white border*/
+    margin: -100px; /*remove margin from the images*/
+    border: 1rem 1rem 1rem 1rem solid white; /*add a white border*/
     }
   
       
