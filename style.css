@@ -149,6 +149,28 @@ header {
     transition: all 0.3s;
   }
 
+  .stitch-patterns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .stitch-pattern {
+    width: 30%;
+    margin: 0 1.5% 20px 1.5%;
+    text-align: center;
+  }
+  
+  .stitch-pattern img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .stitch-pattern p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+
 @media screen and (min-width: 768px) {
     .photo-gallery {
       grid-template-columns: repeat(3, 1fr);
@@ -174,4 +196,89 @@ header {
     .photo-gallery img {
       height: calc(100vw * 0.8);
     }
-  }  
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .stitch-patterns {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 20px;
+      justify-items: center;
+    }
+    .stitch-pattern {
+      text-align: center;
+    }
+    .stitch-pattern img {
+      width: 100%;
+      height: auto;
+    }
+    .stitch-pattern p {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .stitch-patterns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      justify-items: center;
+    }
+    .stitch-pattern {
+      text-align: center;
+    }
+    .stitch-pattern img {
+      width: 100%;
+      height: auto;
+    }
+    .stitch-pattern p {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .stitch-patterns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      justify-items: center;
+    }
+    .stitch-pattern {
+      text-align: center;
+    }
+    .stitch-pattern img {
+      width: 100%;
+      height: auto;
+    }
+    .stitch-pattern p {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .stitch-patterns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      justify-items: center;
+    }
+    .stitch-pattern {
+      text-align: center;
+    }
+    .stitch-pattern img {
+      width: 100%;
+      height: auto;
+    }
+    .stitch-pattern p {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  
