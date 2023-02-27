@@ -1,15 +1,14 @@
 header {
     background-color: #105512;
     color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1;
     text-align: center;
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 30px;
     min-height: 10px;
+    margin: 0;
+    padding: 0;
   }
   
   nav {
@@ -18,7 +17,11 @@ header {
     background-color: #1b9e1b;
     width: 100%;
     text-align: center;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
   }
+  
   
   nav ul {
     list-style: none;
@@ -43,9 +46,9 @@ header {
   
   main {
     max-width: 800px;
-    margin: 100px auto 0; /* add top margin that is equal to the height of the navbar */
-    padding: 0 20px; /* add left and right padding for all screen sizes */
-    box-sizing: border-box; /* include padding in total width */
+    margin: 50px auto 0;
+    padding: 100px 20px 0;
+    box-sizing: border-box;
   }
   
   section {
@@ -65,7 +68,7 @@ header {
   }
   
   #about p {
-    margin-left: 200px; /* adjust the margin to fit your image size */
+    margin: auto /* adjust the margin to fit your image size */
   }
   
   footer {
@@ -76,8 +79,16 @@ header {
   
   body {
     font-size: 16px;
-    padding-top: 100px;
+    padding-top: 0px;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
   }
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
   
   #iframe-container {
     display: flex;
@@ -85,62 +96,46 @@ header {
   }
   
   .photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 960px; /* set the maximum width of the photo gallery */
-    margin: 0 auto; /* center the photo gallery horizontally */
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin: 0 auto;
   }
   
-  .square {
-    width: calc((100% / 3) - 20px); /* use calc() to dynamically set the width of each square */
-    padding-bottom: calc((100% / 6) - 20px); /* use calc() to dynamically set the padding-bottom of each square */
+  .photo-gallery .square {
     position: relative;
     overflow: hidden;
-    box-sizing: border-box;
-    margin: 10px 0; /* add margin to the top and bottom of each row */
-    border: 1rem solid white; /* add a white border */
+    border: 2px solid #fff;
+    transition: all 0.3s;
   }
-  
   
   .photo-gallery .square img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
-    height: 100%;
-    max-width: none;
-    max-height: none;
-    margin: auto;
+    height: 0;
+    padding-bottom: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s;
   }
- 
   
-/*Adjust the size of the photo gallery images for larger screens*/
-@media only screen and (min-width: 768px) {
-    .photo-gallery .square {
-      width: calc((100% / 6) - 20px); /* use calc() to dynamically set the width of each square */
-      padding-bottom: calc((100% / 6) - 20px); /* use calc() to dynamically set the padding-bottom of each square */
-      margin: 10px; /* add margin to the top, bottom, left, and right of each square */
+  .photo-gallery .square:hover {
+    border: 2px solid #1b9e1b;
+  }
+  
+  .photo-gallery .square:hover img {
+    transform: scale(1.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .photo-gallery {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
-  /* Define the styles for tablet-sized screens */
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
-    .photo-gallery .square {
-      width: calc((100% / 3) - 20px);
-      padding-bottom: calc((100% / 3) - 20px);
-      margin: 10px;
+  @media screen and (max-width: 480px) {
+    .photo-gallery {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   
-  /* Define the styles for smaller phone screens */
-  @media only screen and (max-width: 480px) {
-    .photo-gallery .square {
-      width: calc((100% / 2) - 20px);
-      padding-bottom: calc((100% / 2) - 20px);
-      margin: 10px;
-    }
-  }
+  
