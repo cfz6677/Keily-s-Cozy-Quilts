@@ -22,7 +22,6 @@ header {
     padding: 0;
   }
   
-  
   nav ul {
     list-style: none;
     display: flex;
@@ -84,63 +83,8 @@ header {
     padding: 0;
     margin-top: 0;
   }
+  
   html, body {
     margin: 0;
     padding: 0;
   }
-  
-  
-  #iframe-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .photo-gallery {
-    display: grid;
-    grid-gap: 10px;
-    grid-auto-rows: 240px;
-    max-width: 960px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  
-  .photo-gallery .square {
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #fff;
-    transition: all 0.3s;
-  }
-  
-  .photo-gallery .square img {
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    object-position: center;
-    transition: all 0.3s;
-  }
-  
-  
-  .photo-gallery .square:hover {
-    border: 2px solid #1b9e1b;
-  }
-  
-  .photo-gallery .square:hover img {
-    transform: scale(1.1);
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    .photo-gallery {
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 10px;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .photo-gallery {
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 10px;
-    }
-  }
-  
-  
