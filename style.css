@@ -112,12 +112,13 @@ header {
   }
   
   .photo-gallery .square img {
-    width: 100%;
-    height: 100%;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     object-position: center;
     transition: all 0.3s;
   }
+  
   
   .photo-gallery .square:hover {
     border: 2px solid #1b9e1b;
