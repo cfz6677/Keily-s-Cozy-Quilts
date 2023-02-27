@@ -61,6 +61,18 @@ header {
   nav a:hover {
     text-decoration: underline;
   }
+
+  .nav-bottom {
+    display: flex;
+    justify-content: center;
+    background-color: #1b9e1b;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }  
   
   main {
     max-width: 800px;
@@ -93,6 +105,7 @@ header {
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
+    margin-top: -20px;
   }
   
   body {
