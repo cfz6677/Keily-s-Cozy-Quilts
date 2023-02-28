@@ -149,9 +149,11 @@ header {
     transition: all 0.3s;
   }
 
-  .stitch-patterns {
-    display: flex;
-    flex-wrap: wrap;
+  .stitch-pattern {
+    display: inline-block;
+    margin: 10px;
+    width: calc(10% - 20px); /* 10% of the width of the parent minus the margins */
+    text-align: center;
   }
   
   .stitch-pattern {
@@ -168,6 +170,7 @@ header {
   .stitch-pattern p {
     margin-top: 10px;
     font-size: 14px;
+    text-align: center;
   }
   
 
@@ -201,7 +204,7 @@ header {
   @media screen and (min-width: 1024px) {
     .stitch-patterns {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(calc(10% - 20px), 1fr));
       grid-gap: 20px;
       justify-items: center;
     }
@@ -222,7 +225,7 @@ header {
   @media screen and (max-width: 1023px) and (min-width: 768px) {
     .stitch-patterns {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(calc(10% - 20px), 1fr));
       grid-gap: 20px;
       justify-items: center;
     }
@@ -243,7 +246,7 @@ header {
   @media screen and (max-width: 767px) {
     .stitch-patterns {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(calc(10% - 20px), 1fr));
       grid-gap: 20px;
       justify-items: center;
     }
@@ -264,7 +267,7 @@ header {
   @media screen and (max-width: 480px) {
     .stitch-patterns {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(calc(10% - 20px), 1fr));
       grid-gap: 20px;
       justify-items: center;
     }
@@ -281,4 +284,5 @@ header {
       font-weight: bold;
     }
   }
+  
   
