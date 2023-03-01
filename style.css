@@ -164,7 +164,9 @@ header {
   
   .stitch-pattern img {
     width: 25%;
-    height: auto;
+    height: 25%;
+    object-fit: cover;
+    object-position: center;
   }
   
   .stitch-pattern p {
