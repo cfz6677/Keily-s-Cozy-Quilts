@@ -157,13 +157,13 @@ header {
   }
   
   .stitch-pattern {
-    width: 30%;
-    margin: 0 1.5% 20px 1.5%;
+    width: 25%;
+    margin: 0;
     text-align: center;
   }
   
   .stitch-pattern img {
-    width: 100%;
+    width: 25%;
     height: auto;
   }
   
@@ -204,7 +204,7 @@ header {
   @media screen and (min-width: 1024px) {
     .stitch-patterns {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(calc(10% - 20px), 1fr));
+      grid-template-columns: repeat(10, 1fr);
       grid-gap: 20px;
       justify-items: center;
     }
@@ -212,7 +212,7 @@ header {
       text-align: center;
     }
     .stitch-pattern img {
-      width: 100%;
+      width: 500%;
       height: auto;
     }
     .stitch-pattern p {
@@ -233,7 +233,7 @@ header {
       text-align: center;
     }
     .stitch-pattern img {
-      width: 100%;
+      width: 60%;
       height: auto;
     }
     .stitch-pattern p {
@@ -254,7 +254,7 @@ header {
       text-align: center;
     }
     .stitch-pattern img {
-      width: 100%;
+      width: 65%;
       height: auto;
     }
     .stitch-pattern p {
@@ -275,7 +275,7 @@ header {
       text-align: center;
     }
     .stitch-pattern img {
-      width: 100%;
+      width: 75%;
       height: auto;
     }
     .stitch-pattern p {
