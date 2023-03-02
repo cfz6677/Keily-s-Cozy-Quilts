@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 header {
     background-color: #105512;
     color: white;
@@ -114,6 +109,7 @@ header {
   }
   
   body {
+    display: block;
     font-size: 16px;
     padding-top: 0px;
     margin: 0;
@@ -131,6 +127,8 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
   }
   
   .photo-gallery img {
@@ -138,6 +136,7 @@ header {
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
+    object-fit: cover;
   }
   .photo-gallery .square {
     display: flex;
@@ -198,8 +197,9 @@ header {
       grid-template-columns: repeat(3, 1fr);
     }
     .photo-gallery img {
+      width: calc(33.33vw * 0.8);
       height: calc(33.33vw * 0.8);
-    }
+  }
   }
   
 @media screen and (max-width: 767px) {
