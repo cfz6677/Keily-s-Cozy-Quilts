@@ -237,9 +237,7 @@ body {
   }
   
 @media screen and (min-width: 1024px) {
-  .stitch-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
+
   .stitch-patterns {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
