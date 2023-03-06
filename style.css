@@ -10,13 +10,20 @@ header {
   box-sizing: border-box;
   padding-top: 1vw;
   pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
 }
 
+
 body {
+  display: block;
   font-size: 16px;
+  padding-top: 0px;
   margin: 0;
   padding: 0;
-  padding-top: 0;
+  margin-top: 0;
 }
 
   
@@ -36,72 +43,48 @@ body {
   nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #1b9e1b;
     width: 100%;
     text-align: center;
-    z-index: 1;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
   }
-  
+
   nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav li {
-    margin: 0 10px; /* adjust the margin */
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
+  }  
   
   nav li {
     margin: 0 10px;
   }
   
-  nav li:last-child {
-    margin-left: auto;
-  }
-  
   nav a {
     text-decoration: none;
     color: white;
   }
-  
+   
   nav a:hover {
     text-decoration: underline;
   }
   
-  .social-link img {
+  .social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .social-links img {
     height: 30px;
     width: 30px;
+    margin-left: 10px;
     margin-top: 10px;
-  } 
+  }
 
   main {
     max-width: 800px;
@@ -136,28 +119,14 @@ body {
     text-align: center;
     margin-top: -20px;
   }
-  
-  body {
-    display: block;
-    font-size: 16px;
-    padding-top: 0px;
-    margin: 0;
-    padding: 0;
-    margin-top: 0;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
+
   .pricing-h1 {
     font-weight: normal;
   }
   .contact-h1 {
     font-weight: normal;
   }
-  
- 
+
   .photo-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -226,8 +195,6 @@ body {
     font-weight: bold;
   }
   
-  
-
 @media screen and (min-width: 768px) {
     .photo-gallery {
       grid-template-columns: repeat(3, 1fr);
