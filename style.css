@@ -10,10 +10,6 @@ header {
   box-sizing: border-box;
   padding-top: 1vw;
   pointer-events: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 300px;
 }
 
 
@@ -43,10 +39,10 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #1b9e1b;
     width: 100%;
     text-align: center;
+    z-index: 1;
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
