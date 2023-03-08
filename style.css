@@ -1,9 +1,8 @@
 header {
-  background-color: #105512;
+  background-color:  #5e9b86;
   color: white;
   text-align: center;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 30px;
+  font-family: 'Playfair Display', serif;  font-size: 30px;
   position: relative;
   z-index: 2;
   width: 100%;
@@ -38,7 +37,7 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    background-color: #1b9e1b;
+    /* background-color:; */
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -70,7 +69,7 @@ body {
   nav, .nav-bottom {
     display: flex;
     justify-content: center;
-    background-color: #1b9e1b;
+    background-color: #c1d0bf;
     width: 100%;
     text-align: center;
     z-index: 1;
