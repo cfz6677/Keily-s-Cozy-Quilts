@@ -81,8 +81,3 @@ navBottomGalleryLink.addEventListener('click', event => {
   event.preventDefault();
   showSection(gallerySection);
 });
-
-
-// // Embed the Google Form in the Pricing section
-// const pricingSectionContent = document.querySelector('#pricing .content');
-// pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
