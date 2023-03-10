@@ -124,7 +124,7 @@ body {
   }
   
   .header-container img {
-    margin-left: 240px;
+    margin-right: 600px;
     vertical-align: middle;
     margin-bottom: 20px;
   }
@@ -373,4 +373,20 @@ body {
       font-weight: bold;
     }
   }
+  
+  /* @media screen and (max-width: 767px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header-container img {
+      margin-right: 600px;
+      margin-bottom: 10px;
+    }
+    
+    .header-title {
+      font-size: 40px;
+    }
+  } */
   
