@@ -2,7 +2,8 @@ header {
   background-color:  #5e9b86;
   color: white;
   text-align: center;
-  font-family: 'Playfair Display', serif;  font-size: 30px;
+  font-family: 'Playfair Display', serif;  
+  font-size: 30px;
   position: relative;
   z-index: 2;
   width: 100%;
@@ -98,7 +99,50 @@ body {
   
   nav a:hover, .nav-bottom a:hover {
     text-decoration: underline;
-  }  
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-right: 10px;  
+  }
+  
+  .header-container img {
+    margin-right: 0; /* remove default margin-right for image */
+  }
+  
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px; /* add padding-left to text to bring it closer to image */
+  }
+  
+  
+  .gallery-h1 {
+    text-align: center;
+  }
+  .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .page-title img {
+    margin-right: 10px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-container img {
+    margin-right: 10px;
+  }
   
   .social-links {
     display: flex;
