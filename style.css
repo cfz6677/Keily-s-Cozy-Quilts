@@ -110,14 +110,14 @@ body {
   }
   
   .header-container img {
-    margin-right: 100; /* remove default margin-right for image */
+    margin-right: 10px;
   }
   
   .page-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10px; /* add padding-left to text to bring it closer to image */
+    padding-left: 10px;
   }
   
   
@@ -182,7 +182,7 @@ body {
   }
   
   #about p {
-    margin: auto /* adjust the margin to fit your image size */
+    margin: auto 
   }
   
   footer {
