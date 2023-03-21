@@ -96,22 +96,22 @@ bookBtns.forEach(btn => {
 });
 
 // Embed the Google Form in the Pricing section
-// const pricingSectionContent = document.querySelector('#pricing .content');
-// if (pricingSectionContent) {
-//   setTimeout(() => {
-//     pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
-//   }, 10000);
-// }
-
 const pricingSectionContent = document.querySelector('#pricing .content');
 if (pricingSectionContent) {
-  const iframe = document.createElement('iframe');
-  iframe.setAttribute('src', 'https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true');
-  iframe.setAttribute('width', '640');
-  iframe.setAttribute('height', '773');
-  iframe.setAttribute('frameborder', '0');
-  iframe.setAttribute('marginheight', '0');
-  iframe.setAttribute('marginwidth', '0');
-  pricingSectionContent.appendChild(iframe);
+  setTimeout(() => {
+    pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+  }, 10000);
 }
+
+// const pricingSectionContent = document.querySelector('#pricing .content');
+// if (pricingSectionContent) {
+//   const iframe = document.createElement('iframe');
+//   iframe.setAttribute('src', 'https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true');
+//   iframe.setAttribute('width', '640');
+//   iframe.setAttribute('height', '773');
+//   iframe.setAttribute('frameborder', '0');
+//   iframe.setAttribute('marginheight', '0');
+//   iframe.setAttribute('marginwidth', '0');
+//   pricingSectionContent.appendChild(iframe);
+// }
 
