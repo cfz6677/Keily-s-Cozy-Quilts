@@ -86,8 +86,6 @@ navBottomGalleryLink.addEventListener('click', event => {
 
 bookBtns.forEach(btn => {
   btn.addEventListener('click', event => {
-    console.log('Button clicked')
-    console.log(formWrapper.classList.contains('show'))
     event.preventDefault();
     formWrapper.classList.add('show');
   });

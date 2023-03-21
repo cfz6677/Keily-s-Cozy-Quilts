@@ -168,7 +168,7 @@ body {
 
   /* Form Wrapper */
   .form-wrapper {
-    display: none;
+    visibility: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -180,7 +180,7 @@ body {
   }
   
   .form-wrapper.show {
-    display: block;
+    visibility: visible;
   }
   
   
