@@ -14,6 +14,8 @@ const pricingSection = document.querySelector('#pricing');
 const stitchPatternsSection = document.querySelector('#stitch-patterns');
 const contactSection = document.querySelector('#contact');
 const gallerySection = document.querySelector('#gallery');
+const bookBtns = document.querySelectorAll('.book-btn');
+const formWrapper = document.querySelector('.form-wrapper');
 
 // hide all sections except the first one
 pricingSection.style.display = 'none';
@@ -82,7 +84,17 @@ navBottomGalleryLink.addEventListener('click', event => {
   showSection(gallerySection);
 });
 
+bookBtns.forEach(btn => {
+  btn.addEventListener('click', event => {
+    console.log('Button clicked')
+    console.log(formWrapper.classList.contains('show'))
+    event.preventDefault();
+    formWrapper.classList.add('show');
+  });
+});
 
-// // Embed the Google Form in the Pricing section
-// const pricingSectionContent = document.querySelector('#pricing .content');
-// pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+// Embed the Google Form in the Pricing section
+const pricingSectionContent = document.querySelector('#pricing .content');
+if (pricingSectionContent) {
+  pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+}

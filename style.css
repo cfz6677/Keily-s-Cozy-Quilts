@@ -166,6 +166,25 @@ body {
     transition: all 0.3s;
   }
 
+  /* Form Wrapper */
+  .form-wrapper {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    z-index: 2;
+  }
+  
+  .form-wrapper.show {
+    display: block;
+  }
+  
+  
+
 /* Social Links */
   .social-links {
     display: flex;
@@ -250,6 +269,25 @@ body {
     font-size: 14px;
     font-weight: bold;
   }
+
+  /* Book My Quilt Buttons */
+
+  .book-btn {
+    background-color: #5e9b86;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+  }
+  
+  .book-btn:hover {
+    background-color: #5e9b86;
+    text-decoration: underline;
+  }
+  .hidden {
+    display: none;
+  }
+  
 
 @media screen and (min-width: 768px) {
     .photo-gallery {
@@ -379,5 +417,4 @@ body {
       font-size: 40px;
     }
   }
-  
   
