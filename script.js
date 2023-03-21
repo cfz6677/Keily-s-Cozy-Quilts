@@ -1,4 +1,3 @@
-// Get references to the menu links and content sections
 const aboutLink = document.querySelector('nav ul li:nth-child(1) a');
 const pricingLink = document.querySelector('nav ul li:nth-child(2) a');
 const stitchPatternsLink = document.querySelector('nav ul li:nth-child(3) a');
@@ -16,12 +15,14 @@ const contactSection = document.querySelector('#contact');
 const gallerySection = document.querySelector('#gallery');
 const bookBtns = document.querySelectorAll('.book-btn');
 const formWrapper = document.querySelector('.form-wrapper');
+const bookQuiltFormSection = document.querySelector('#book-quilt-form');
 
 // hide all sections except the first one
 pricingSection.style.display = 'none';
 stitchPatternsSection.style.display = 'none';
 contactSection.style.display = 'none';
 gallerySection.style.display = 'none';
+formWrapper.style.display = 'none';
 
 // function to hide all sections and show the specified section
 function showSection(section) {
@@ -30,6 +31,7 @@ function showSection(section) {
   stitchPatternsSection.style.display = 'none';
   contactSection.style.display = 'none';
   gallerySection.style.display = 'none';
+  bookQuiltFormSection.style.display = 'none';
   section.style.display = 'block';
 }
 
@@ -84,15 +86,32 @@ navBottomGalleryLink.addEventListener('click', event => {
   showSection(gallerySection);
 });
 
+
 bookBtns.forEach(btn => {
   btn.addEventListener('click', event => {
     event.preventDefault();
     formWrapper.classList.add('show');
+    showSection(bookQuiltFormSection);
   });
 });
 
 // Embed the Google Form in the Pricing section
+// const pricingSectionContent = document.querySelector('#pricing .content');
+// if (pricingSectionContent) {
+//   setTimeout(() => {
+//     pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+//   }, 10000);
+// }
+
 const pricingSectionContent = document.querySelector('#pricing .content');
 if (pricingSectionContent) {
-  pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+  const iframe = document.createElement('iframe');
+  iframe.setAttribute('src', 'https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true');
+  iframe.setAttribute('width', '640');
+  iframe.setAttribute('height', '773');
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('marginheight', '0');
+  iframe.setAttribute('marginwidth', '0');
+  pricingSectionContent.appendChild(iframe);
 }
+
