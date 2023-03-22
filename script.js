@@ -14,7 +14,7 @@ const stitchPatternsSection = document.querySelector('#stitch-patterns');
 const contactSection = document.querySelector('#contact');
 const gallerySection = document.querySelector('#gallery');
 const bookBtns = document.querySelectorAll('.book-btn');
-const formWrapper = document.querySelector('.form-wrapper');
+const formWrapper = document.querySelector('.form-wrapper.show');
 const bookQuiltFormSection = document.querySelector('#book-quilt-form');
 
 // hide all sections except the first one
@@ -90,6 +90,7 @@ navBottomGalleryLink.addEventListener('click', event => {
 bookBtns.forEach(btn => {
   btn.addEventListener('click', event => {
     event.preventDefault();
+    console.log("Button Clicked");
     formWrapper.classList.add('show');
     showSection(bookQuiltFormSection);
   });
@@ -99,7 +100,7 @@ bookBtns.forEach(btn => {
 const pricingSectionContent = document.querySelector('#pricing .content');
 if (pricingSectionContent) {
   setTimeout(() => {
-    pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6wC-bcCJUeVXI7t51t4PC47G-sDIjUWoNh8J3lID7PLgfJA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+    pricingSectionContent.innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRx3Vxuw7hf546a3VdWL65Qlncwt-mtFl0NkxS3OCBaWeXNQ/viewform?embedded=true" width="640" height="462" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
   }, 10000);
 }
 
