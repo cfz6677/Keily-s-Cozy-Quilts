@@ -76,13 +76,13 @@ body {
   nav a:hover {
     text-decoration: underline;
   }
-
+  
   .nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
-  
 
   nav, .nav-bottom {
     display: flex;
@@ -299,12 +299,12 @@ body {
     font-size: 30px;
     font-family: 'PT Sans Narrow', sans-serif;
     cursor: pointer;
+    white-space: nowrap;
   }
   
   .book-btn:hover {
     text-decoration: underline;
   }
-  
  
   .hidden {
     display: none;
