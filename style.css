@@ -184,10 +184,10 @@ body {
   }
   
   
-  /* .form-wrapper.show {
-    visibility: visible;
+  .form-wrapper.show {
+    display: block;
   }
-   */
+  
   
 
 /* Social Links */
