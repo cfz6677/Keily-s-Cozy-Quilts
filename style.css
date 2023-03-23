@@ -45,6 +45,16 @@ body {
   }
 
   /* Nav Bar */
+  .nav-content ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-content ul .nav-button {
+    margin-left: auto;
+  }  
+
   nav {
     display: flex;
     justify-content: center;
@@ -69,7 +79,7 @@ body {
   
   nav a {
     text-decoration: none;
-    color: white;
+    color: #5e9b86;
   }
    
   nav a:hover {
@@ -94,6 +104,7 @@ body {
     margin: 0;
     padding: 0;
   }
+  
   
   nav li, .nav-bottom li {
     margin: 0 10px;
@@ -308,6 +319,11 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  .book-my-quilt-wrapper {
+    margin-left: auto;
+  }
+  
 
 @media screen and (min-width: 768px) {
     .photo-gallery {
