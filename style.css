@@ -45,12 +45,17 @@ body {
   }
 
   /* Nav Bar */
+  /* .nav-content ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  } */
   
   nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #c1d0bf;
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -58,6 +63,18 @@ body {
     padding: 0;
     margin-bottom: 20px;
   }
+
+  .nav-content ul,
+  .nav-bottom ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-content .book-my-quilt-wrapper,
+  .nav-bottom .book-my-quilt-wrapper {
+    margin-left: auto;
+  }
+  
 
   nav ul {
     display: flex;
@@ -78,15 +95,6 @@ body {
   nav a:hover {
     text-decoration: underline;
   }
-  
-
-  .menu {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
 
   nav, .nav-bottom {
     display: flex;
@@ -99,19 +107,14 @@ body {
     padding: 0;
     margin-bottom: 20px;
   }
-  nav ul {
-    display: inline-block;
+  
+  nav ul, .nav-bottom ul {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
-  .nav-bottom ul {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
   
   nav li, .nav-bottom li {
     margin: 0 10px;
@@ -305,13 +308,10 @@ body {
     padding: 10px 20px;
     border: none;
     text-decoration: none;
-    font-size: 30px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    cursor: pointer;
-    white-space: nowrap;
   }
   
   .book-btn:hover {
+    background-color: #5e9b86;
     text-decoration: underline;
   }
  
@@ -463,4 +463,5 @@ body {
       font-size: 40px;
     }
   }
+  
   
