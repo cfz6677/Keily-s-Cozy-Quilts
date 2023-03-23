@@ -46,10 +46,13 @@ body {
 
   /* Nav Bar */
   .nav-content ul {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
   }
+  
   
   .nav-content ul .nav-button {
     margin-left: auto;
@@ -65,6 +68,15 @@ body {
     padding: 0;
     margin-bottom: 20px;
   }
+
+  .nav-bottom ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  
 
   nav ul {
     display: flex;
