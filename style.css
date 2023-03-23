@@ -49,6 +49,7 @@ body {
   nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #c1d0bf;
     width: 100%;
     text-align: center;
@@ -83,12 +84,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .nav-bottom {
-    margin-right: auto;
-  }
+  
 
   nav, .nav-bottom {
     display: flex;
