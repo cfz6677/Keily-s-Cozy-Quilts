@@ -48,7 +48,8 @@ body {
   
   nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: #c1d0bf;
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -56,6 +57,7 @@ body {
     padding: 0;
     margin-bottom: 20px;
   }
+  
 
   nav ul {
     display: flex;
@@ -78,11 +80,11 @@ body {
   }
   
   .nav-content {
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-  }
+  }  
 
   nav, .nav-bottom {
     display: flex;
