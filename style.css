@@ -45,13 +45,6 @@ body {
   }
 
   /* Nav Bar */
-  /* .nav-content ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  } */
   
   nav {
     display: flex;
@@ -63,18 +56,6 @@ body {
     padding: 0;
     margin-bottom: 20px;
   }
-
-  .nav-content ul,
-  .nav-bottom ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav-content .book-my-quilt-wrapper,
-  .nav-bottom .book-my-quilt-wrapper {
-    margin-left: auto;
-  }
-  
 
   nav ul {
     display: flex;
@@ -95,6 +76,13 @@ body {
   nav a:hover {
     text-decoration: underline;
   }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 
   nav, .nav-bottom {
     display: flex;
@@ -308,12 +296,15 @@ body {
     padding: 10px 20px;
     border: none;
     text-decoration: none;
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    cursor: pointer;
   }
   
   .book-btn:hover {
-    background-color: #5e9b86;
     text-decoration: underline;
   }
+  
  
   .hidden {
     display: none;
