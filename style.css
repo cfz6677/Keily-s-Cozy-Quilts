@@ -15,6 +15,10 @@ header {
   min-height: 10px;
   }
 
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
 
 body {
   display: block;
@@ -293,7 +297,17 @@ body {
   .hidden {
     display: none;
   }
-  
+
+  .pricing .book-btn {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 @media screen and (min-width: 768px) {
     .photo-gallery {
