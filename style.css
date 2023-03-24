@@ -2,8 +2,7 @@ header {
   background-color:  #5e9b86;
   color: white;
   text-align: center;
-  font-family: 'Playfair Display', serif;  
-  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
   position: sticky;
   z-index: 2;
   width: 100%;
@@ -43,15 +42,6 @@ body {
     margin: 30px 0;
     display: none;
   }
-
-  /* Nav Bar */
-  /* .nav-content ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  } */
   
   nav {
     display: flex;
@@ -140,7 +130,7 @@ body {
   
   .header-title {
     position: absolute;
-    font-family: 'Playfair Display', serif;  
+    font-family: 'Dancing Script', cursive;
     font-size: 60px;
     margin: 0;
     text-align: center;
