@@ -454,4 +454,8 @@ body {
     }
   }
   
-  
+  @media screen and (max-width: 480px) {
+    nav a, .nav-bottom a {
+      color: #5e9b86;
+    }
+  }
