@@ -82,9 +82,9 @@ body {
     color: #5e9b86;
   }
    
-  nav a:hover {
+  /* nav a:hover {
     text-decoration: underline;
-  }
+  } */
 
   nav, .nav-bottom {
     display: flex;
@@ -114,7 +114,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 30px;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Dancing Script', cursive;
   }
   
   nav a:hover, .nav-bottom a:hover {
