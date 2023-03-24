@@ -465,3 +465,14 @@ body {
     }
   }
   
+  @media screen and (max-width: 428px) {
+    nav a, .nav-bottom a {
+      color: #5e9b86;
+    }
+  
+    nav a:hover, .nav-bottom a:hover {
+      text-decoration: underline;
+      color: #5e9b86;
+    }
+  }
+  
